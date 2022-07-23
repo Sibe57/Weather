@@ -6,14 +6,20 @@
 //
 
 import SwiftUI
+import BottomSheet
+
+enum BottomSheetPosition: CGFloat, CaseIterable {
+    case top = 0.83
+    case middle = 0.385
+}
 
 struct HomeView: View {
+    @State var bottomSeetPosition: BottomSheetPosition = .middle
     var body: some View {
         NavigationView {
             ZStack {
                 Color.background
                     .ignoresSafeArea()
-                
                 Image("Background")
                     .resizable()
                     .ignoresSafeArea()
@@ -34,8 +40,14 @@ struct HomeView: View {
                     Spacer()
                 }
                 .padding(.top, 51)
-                
-                TabBar(action: {})
+                BottomSheetView(position: $bottomSeetPosition) {
+                } content: {
+                    ForecastView()
+                }
+
+                TabBar(action: {
+                    bottomSeetPosition = .top
+                })
             }
             .navigationBarHidden(true)
         }

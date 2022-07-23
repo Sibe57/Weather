@@ -19,7 +19,7 @@ struct TabBar: View {
                 .frame(height: 88)
                 .overlay {
                     Arc()
-                        .stroke()
+                        .stroke(Color.tabBarBorder, lineWidth: 0.5)
                 }
             HStack {
                 Button {
