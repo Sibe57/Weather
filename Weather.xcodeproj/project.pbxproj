@@ -17,6 +17,7 @@
 		02A17532288C2556008F849B /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A17531288C2556008F849B /* Shapes.swift */; };
 		02A17535288C42A2008F849B /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 02A17534288C42A2008F849B /* BottomSheet */; };
 		02A17537288C45C5008F849B /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A17536288C45C5008F849B /* ForecastView.swift */; };
+		02A17539288C519E008F849B /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A17538288C519E008F849B /* Blur.swift */; };
 		1CE91C61CF1957A87F78A51B /* Pods_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA839AE3410104D082C9ED9 /* Pods_Weather.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		02A1752F288C20B5008F849B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		02A17531288C2556008F849B /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		02A17536288C45C5008F849B /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
+		02A17538288C519E008F849B /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
 		48E7CF4981D39B4EC07BA714 /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.release.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
 		F922645473D80CEA2AF65A85 /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		FDA839AE3410104D082C9ED9 /* Pods_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,7 @@
 		02A07E70288C009900B955A6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				02A17538288C519E008F849B /* Blur.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			files = (
 				02A07E5F288BFF3200B955A6 /* ContentView.swift in Sources */,
 				02A07E74288C061E00B955A6 /* HomeView.swift in Sources */,
+				02A17539288C519E008F849B /* Blur.swift in Sources */,
 				02A07E5D288BFF3200B955A6 /* WeatherApp.swift in Sources */,
 				02A07E72288C013A00B955A6 /* Extentions.swift in Sources */,
 				02A17537288C45C5008F849B /* ForecastView.swift in Sources */,
