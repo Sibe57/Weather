@@ -53,8 +53,8 @@ struct Forecast: Identifiable {
 }
 
 extension Forecast {
-    static let hour: TimeInterval = 60 * 60
-    static let day: TimeInterval = 60 * 60 * 24
+    private static let hour: TimeInterval = 60 * 60
+    private static let day: TimeInterval = 60 * 60 * 24
     
     static let hourly: [Forecast] = [
         Forecast(date: .init(timeIntervalSinceNow: hour * -1), weather: .rainy,
