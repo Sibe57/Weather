@@ -41,7 +41,8 @@ struct HomeView: View {
                     Image("House")
                         .frame(maxHeight: .infinity, alignment: .top)
                         .padding(.top, 257)
-                        .offset(y: -bottomSheetTranslationProrated * imageOffset * 0.8)
+                        .offset(y: -bottomSheetTranslationProrated *
+                                imageOffset * 0.8)
                     
                     VStack(spacing: -10 * (1 - bottomSheetTranslationProrated)) {
                         Text("Montreal")
