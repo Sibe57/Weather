@@ -13,7 +13,7 @@ struct SegmentedControll: View {
         VStack(spacing: 5) {
             HStack {
                 Button {
-                    withAnimation(.easeInOut(duration: 0.20)) {
+                    withAnimation(.easeInOut(duration: 0.35)) {
                         selection = 0
                     }
                 } label: {
@@ -22,7 +22,7 @@ struct SegmentedControll: View {
                 .frame(minWidth: 0, maxWidth: .infinity)
                 
                 Button {
-                    withAnimation(.easeInOut(duration: 0.20)) {
+                    withAnimation(.easeInOut(duration: 0.35)) {
                         selection = 1
                     }
                 } label: {
