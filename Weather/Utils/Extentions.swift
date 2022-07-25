@@ -81,7 +81,7 @@ extension View {
                 shape
                     .stroke(color, lineWidth: lineWidth)
                     .blendMode(blendMode)
-                    .offset(x:offsetX, y: offsetY)
+                    .offset(x: offsetX, y: offsetY)
                     .blur(radius: blur)
                     .mask(shape)
                     .opacity(opacity)
