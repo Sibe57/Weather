@@ -13,8 +13,31 @@ struct ForecastView: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 20) {
+            VStack(spacing: 0) {
                 SegmentedControll(selection: $selection)
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 12) {
+                        if selection == 0 {
+                            ForEach(Forecast.hourly) {
+                                ForecastCard(forecast: $0,
+                                             forecastPeriod: .hourly)
+                            }
+                            .transition(.offset(x: -430))
+                        } else {
+                            ForEach(Forecast.daily) {
+                                ForecastCard(forecast: $0,
+                                             forecastPeriod: .daily)
+                            }
+                            .transition(.offset(x: 430))
+                        }
+                    }
+                    .padding(.vertical, 20)
+                }
+                .padding(.horizontal, 20)
+                Image("Forecast Widgets")
+                    .opacity(bottomSheetTranslationProrated)
+                
             }
         }
         .background(Color.bottomSheetBackground)
