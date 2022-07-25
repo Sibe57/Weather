@@ -35,7 +35,7 @@ struct HomeView: View {
                         .ignoresSafeArea()
                     Image("Background")
                         .resizable()
-                        .ignoresSafeArea()
+                        
                         .offset(y: -bottomSheetTranslationProrated * imageOffset)
                     
                     Image("House")
@@ -77,7 +77,8 @@ struct HomeView: View {
                     TabBar(action: {
                         bottomSeetPosition = .top
                     })
-                    .offset(y: bottomSheetTranslationProrated * 115)
+                    .ignoresSafeArea()
+//                    .offset(y: bottomSheetTranslationProrated * 115)
                 }
                 .navigationBarHidden(true)
             }

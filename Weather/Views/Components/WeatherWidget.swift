@@ -34,7 +34,7 @@ struct WeatherWidget: View {
                         .padding(.trailing, 4)
                     Text(forecast.weather.rawValue)
                         .font(.footnote)
-                        .padding(.trailing,24)
+                        .padding(.trailing, 24)
                 }
             }
             .foregroundColor(.white)
